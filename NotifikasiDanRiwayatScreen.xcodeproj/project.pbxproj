@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		DA370E6425431EBF005E9E1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA370E6225431EBF005E9E1D /* Main.storyboard */; };
 		DA370E6625431EC0005E9E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA370E6525431EC0005E9E1D /* Assets.xcassets */; };
 		DA370E6925431EC0005E9E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA370E6725431EC0005E9E1D /* LaunchScreen.storyboard */; };
+		DAC75DDF2548638100AC30D2 /* First.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DDE2548638100AC30D2 /* First.swift */; };
+		ED219333EEA4892A1CA74A3A /* Pods_NotifikasiDanRiwayatScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF71974B6AD0DC1D0BE8086 /* Pods_NotifikasiDanRiwayatScreen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B97EAE0FF01B9E3325D620F6 /* Pods-NotifikasiDanRiwayatScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotifikasiDanRiwayatScreen.debug.xcconfig"; path = "Target Support Files/Pods-NotifikasiDanRiwayatScreen/Pods-NotifikasiDanRiwayatScreen.debug.xcconfig"; sourceTree = "<group>"; };
+		CEF71974B6AD0DC1D0BE8086 /* Pods_NotifikasiDanRiwayatScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotifikasiDanRiwayatScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D844230EAB024642C7029960 /* Pods-NotifikasiDanRiwayatScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotifikasiDanRiwayatScreen.release.xcconfig"; path = "Target Support Files/Pods-NotifikasiDanRiwayatScreen/Pods-NotifikasiDanRiwayatScreen.release.xcconfig"; sourceTree = "<group>"; };
 		DA370E5925431EBF005E9E1D /* NotifikasiDanRiwayatScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifikasiDanRiwayatScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA370E5C25431EBF005E9E1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA370E5E25431EBF005E9E1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		DA370E6525431EC0005E9E1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA370E6825431EC0005E9E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA370E6A25431EC0005E9E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC75DDE2548638100AC30D2 /* First.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED219333EEA4892A1CA74A3A /* Pods_NotifikasiDanRiwayatScreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A1A6D58C0E5C356FD555528 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B97EAE0FF01B9E3325D620F6 /* Pods-NotifikasiDanRiwayatScreen.debug.xcconfig */,
+				D844230EAB024642C7029960 /* Pods-NotifikasiDanRiwayatScreen.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DA370E5025431EBF005E9E1D = {
 			isa = PBXGroup;
 			children = (
+				DAC75DDD2548635C00AC30D2 /* Model */,
+				DAC75DDC2548635600AC30D2 /* View */,
+				DAC75DDB2548634600AC30D2 /* Controller */,
 				DA370E5B25431EBF005E9E1D /* NotifikasiDanRiwayatScreen */,
 				DA370E5A25431EBF005E9E1D /* Products */,
+				6A1A6D58C0E5C356FD555528 /* Pods */,
+				F7F72CE29A9B403B330B64BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +88,36 @@
 			path = NotifikasiDanRiwayatScreen;
 			sourceTree = "<group>";
 		};
+		DAC75DDB2548634600AC30D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DAC75DDC2548635600AC30D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAC75DDE2548638100AC30D2 /* First.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DAC75DDD2548635C00AC30D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7F72CE29A9B403B330B64BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEF71974B6AD0DC1D0BE8086 /* Pods_NotifikasiDanRiwayatScreen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA370E6D25431EC0005E9E1D /* Build configuration list for PBXNativeTarget "NotifikasiDanRiwayatScreen" */;
 			buildPhases = (
+				EB4E667B315ECA674E40694A /* [CP] Check Pods Manifest.lock */,
 				DA370E5525431EBF005E9E1D /* Sources */,
 				DA370E5625431EBF005E9E1D /* Frameworks */,
 				DA370E5725431EBF005E9E1D /* Resources */,
+				D52F991A45B4D92D025BB3A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +185,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D52F991A45B4D92D025BB3A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotifikasiDanRiwayatScreen/Pods-NotifikasiDanRiwayatScreen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotifikasiDanRiwayatScreen/Pods-NotifikasiDanRiwayatScreen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotifikasiDanRiwayatScreen/Pods-NotifikasiDanRiwayatScreen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB4E667B315ECA674E40694A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotifikasiDanRiwayatScreen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA370E5525431EBF005E9E1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +234,7 @@
 			files = (
 				DA370E6125431EBF005E9E1D /* ViewController.swift in Sources */,
 				DA370E5D25431EBF005E9E1D /* AppDelegate.swift in Sources */,
+				DAC75DDF2548638100AC30D2 /* First.swift in Sources */,
 				DA370E5F25431EBF005E9E1D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +379,7 @@
 		};
 		DA370E6E25431EC0005E9E1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97EAE0FF01B9E3325D620F6 /* Pods-NotifikasiDanRiwayatScreen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +399,7 @@
 		};
 		DA370E6F25431EC0005E9E1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D844230EAB024642C7029960 /* Pods-NotifikasiDanRiwayatScreen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
