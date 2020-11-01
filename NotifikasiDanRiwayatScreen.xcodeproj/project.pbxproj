@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		DA370E5D25431EBF005E9E1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA370E5C25431EBF005E9E1D /* AppDelegate.swift */; };
 		DA370E5F25431EBF005E9E1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA370E5E25431EBF005E9E1D /* SceneDelegate.swift */; };
-		DA370E6125431EBF005E9E1D /* FirstController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA370E6025431EBF005E9E1D /* FirstController.swift */; };
+		DA370E6125431EBF005E9E1D /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA370E6025431EBF005E9E1D /* MainController.swift */; };
 		DA370E6625431EC0005E9E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA370E6525431EC0005E9E1D /* Assets.xcassets */; };
 		DA370E6925431EC0005E9E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA370E6725431EC0005E9E1D /* LaunchScreen.storyboard */; };
-		DAC75DDF2548638100AC30D2 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DDE2548638100AC30D2 /* FirstView.swift */; };
-		DAC75DEA254C7E0F00AC30D2 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DE9254C7E0F00AC30D2 /* SecondView.swift */; };
-		DAC75DED254C7E2F00AC30D2 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DEC254C7E2F00AC30D2 /* SecondController.swift */; };
+		DAC75DDF2548638100AC30D2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DDE2548638100AC30D2 /* MainView.swift */; };
+		DAC75DEA254C7E0F00AC30D2 /* NotificationAndRiwayatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DE9254C7E0F00AC30D2 /* NotificationAndRiwayatView.swift */; };
+		DAC75DED254C7E2F00AC30D2 /* NotificationAndRiwayatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DEC254C7E2F00AC30D2 /* NotificationAndRiwayatController.swift */; };
 		DAC75DF0254D196B00AC30D2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DEF254D196B00AC30D2 /* TabBarController.swift */; };
-		DAC75E14254EE46F00AC30D2 /* NotifikasiActivateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75E13254EE46F00AC30D2 /* NotifikasiActivateView.swift */; };
-		DAC75E17254EE49300AC30D2 /* NotifikasiActivateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75E16254EE49300AC30D2 /* NotifikasiActivateController.swift */; };
+		DAC75E14254EE46F00AC30D2 /* ActivateNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75E13254EE46F00AC30D2 /* ActivateNotificationView.swift */; };
+		DAC75E17254EE49300AC30D2 /* ActivateNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75E16254EE49300AC30D2 /* ActivateNotificationController.swift */; };
 		ED219333EEA4892A1CA74A3A /* Pods_NotifikasiDanRiwayatScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF71974B6AD0DC1D0BE8086 /* Pods_NotifikasiDanRiwayatScreen.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,16 +28,16 @@
 		DA370E5925431EBF005E9E1D /* NotifikasiDanRiwayatScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifikasiDanRiwayatScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA370E5C25431EBF005E9E1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA370E5E25431EBF005E9E1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA370E6025431EBF005E9E1D /* FirstController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstController.swift; sourceTree = "<group>"; };
+		DA370E6025431EBF005E9E1D /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		DA370E6525431EC0005E9E1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA370E6825431EC0005E9E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA370E6A25431EC0005E9E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAC75DDE2548638100AC30D2 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
-		DAC75DE9254C7E0F00AC30D2 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
-		DAC75DEC254C7E2F00AC30D2 /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
+		DAC75DDE2548638100AC30D2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DAC75DE9254C7E0F00AC30D2 /* NotificationAndRiwayatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAndRiwayatView.swift; sourceTree = "<group>"; };
+		DAC75DEC254C7E2F00AC30D2 /* NotificationAndRiwayatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAndRiwayatController.swift; sourceTree = "<group>"; };
 		DAC75DEF254D196B00AC30D2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		DAC75E13254EE46F00AC30D2 /* NotifikasiActivateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifikasiActivateView.swift; sourceTree = "<group>"; };
-		DAC75E16254EE49300AC30D2 /* NotifikasiActivateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifikasiActivateController.swift; sourceTree = "<group>"; };
+		DAC75E13254EE46F00AC30D2 /* ActivateNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateNotificationView.swift; sourceTree = "<group>"; };
+		DAC75E16254EE49300AC30D2 /* ActivateNotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateNotificationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +97,10 @@
 		DAC75DDB2548634600AC30D2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DA370E6025431EBF005E9E1D /* FirstController.swift */,
-				DAC75DEC254C7E2F00AC30D2 /* SecondController.swift */,
+				DA370E6025431EBF005E9E1D /* MainController.swift */,
+				DAC75DEC254C7E2F00AC30D2 /* NotificationAndRiwayatController.swift */,
 				DAC75DEF254D196B00AC30D2 /* TabBarController.swift */,
-				DAC75E16254EE49300AC30D2 /* NotifikasiActivateController.swift */,
+				DAC75E16254EE49300AC30D2 /* ActivateNotificationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -108,9 +108,9 @@
 		DAC75DDC2548635600AC30D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DAC75DDE2548638100AC30D2 /* FirstView.swift */,
-				DAC75DE9254C7E0F00AC30D2 /* SecondView.swift */,
-				DAC75E13254EE46F00AC30D2 /* NotifikasiActivateView.swift */,
+				DAC75DDE2548638100AC30D2 /* MainView.swift */,
+				DAC75DE9254C7E0F00AC30D2 /* NotificationAndRiwayatView.swift */,
+				DAC75E13254EE46F00AC30D2 /* ActivateNotificationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,14 +243,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA370E6125431EBF005E9E1D /* FirstController.swift in Sources */,
-				DAC75DEA254C7E0F00AC30D2 /* SecondView.swift in Sources */,
+				DA370E6125431EBF005E9E1D /* MainController.swift in Sources */,
+				DAC75DEA254C7E0F00AC30D2 /* NotificationAndRiwayatView.swift in Sources */,
 				DA370E5D25431EBF005E9E1D /* AppDelegate.swift in Sources */,
-				DAC75DED254C7E2F00AC30D2 /* SecondController.swift in Sources */,
-				DAC75E14254EE46F00AC30D2 /* NotifikasiActivateView.swift in Sources */,
+				DAC75DED254C7E2F00AC30D2 /* NotificationAndRiwayatController.swift in Sources */,
+				DAC75E14254EE46F00AC30D2 /* ActivateNotificationView.swift in Sources */,
 				DAC75DF0254D196B00AC30D2 /* TabBarController.swift in Sources */,
-				DAC75E17254EE49300AC30D2 /* NotifikasiActivateController.swift in Sources */,
-				DAC75DDF2548638100AC30D2 /* FirstView.swift in Sources */,
+				DAC75E17254EE49300AC30D2 /* ActivateNotificationController.swift in Sources */,
+				DAC75DDF2548638100AC30D2 /* MainView.swift in Sources */,
 				DA370E5F25431EBF005E9E1D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

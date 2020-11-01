@@ -18,9 +18,9 @@ class TabBarController: UITabBarController {
         
     }
     
-    lazy public var initialTabBar: FirstController = {
+    lazy public var initialTabBar: MainController = {
         
-        let initialTabBar = FirstController()
+        let initialTabBar = MainController()
         
         let defaultImage = UIImage(named: "beranda")!
         
@@ -35,9 +35,9 @@ class TabBarController: UITabBarController {
         return initialTabBar
     }()
     
-    lazy public var finalTabBar: SecondController = {
+    lazy public var finalTabBar: NotificationAndRiwayatController = {
         
-        let finalTabBar = SecondController()
+        let finalTabBar = NotificationAndRiwayatController()
         
         let defaultImage = UIImage(named: "notifikasi")
         

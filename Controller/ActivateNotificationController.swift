@@ -7,15 +7,15 @@
 
 import UIKit
 
-class NotifikasiActivateController: UIViewController {
+class ActivateNotificationController: UIViewController {
     
-    private var notifikasiActivateView: NotifikasiActivateView!
+    private var activateNotifikasiView: ActivateNotificationView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.notifikasiActivateView = NotifikasiActivateView.init(frame: self.view.frame)
-        self.view = self.notifikasiActivateView
+        self.activateNotifikasiView = ActivateNotificationView.init(frame: self.view.frame)
+        self.view = self.activateNotifikasiView
         
         self.navigationController?.navigationBar.isHidden = true
     }

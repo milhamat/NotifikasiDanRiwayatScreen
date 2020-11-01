@@ -8,7 +8,7 @@
 import SnapKit
 import UIKit
 
-class FirstView: UIView {
+class MainView: UIView {
     
     let greatingLabel: UILabel = {
         let label = UILabel()

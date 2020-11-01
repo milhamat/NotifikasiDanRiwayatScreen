@@ -7,14 +7,14 @@
 
 import UIKit
 
-class FirstController: UIViewController {
+class MainController: UIViewController {
     
-    private var firstView: FirstView!
+    private var firstView: MainView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.firstView = FirstView.init(frame: self.view.frame)
+        self.firstView = MainView.init(frame: self.view.frame)
         self.view = self.firstView
         
         self.navigationController?.navigationBar.isHidden = true

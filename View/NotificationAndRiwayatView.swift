@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SecondView: UIView{
+class NotificationAndRiwayatView: UIView{
     
     override init(frame: CGRect) {
         super.init(frame: frame)

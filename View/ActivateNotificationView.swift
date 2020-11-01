@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class NotifikasiActivateView: UIView{
+class ActivateNotificationView: UIView{
     
     let notifBellImage: UIImageView = {
         let imageView = UIImageView()
