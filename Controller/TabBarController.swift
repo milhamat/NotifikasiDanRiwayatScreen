@@ -14,7 +14,7 @@ class TabBarController: UITabBarController {
         
         self.viewControllers = [initialTabBar, finalTabBar]
         
-        tabBar.alpha = 0.5
+//        tabBar.alpha = 0.5
         
     }
     

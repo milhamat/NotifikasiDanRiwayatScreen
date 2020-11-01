@@ -19,7 +19,11 @@ class FirstController: UIViewController {
         
         self.navigationController?.navigationBar.isHidden = true
         
-   
+        self.firstView.biasaAjaButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+    }
+    
+    @objc private func buttonPressed(){
+        print("Biasa Aja")
     }
 }
 

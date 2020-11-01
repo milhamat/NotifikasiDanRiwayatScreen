@@ -16,5 +16,8 @@ class SecondController: UIViewController {
         
         self.secondView = SecondView.init(frame: self.view.frame)
         self.view = self.secondView
+        
+        
     }
+    
 }

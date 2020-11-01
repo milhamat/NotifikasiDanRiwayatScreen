@@ -10,7 +10,6 @@ import SnapKit
 
 class SecondView: UIView{
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -23,6 +22,5 @@ class SecondView: UIView{
     private func setupView(){
         self.backgroundColor = UIColor(red: 0.94, green: 0.89, blue: 0.87, alpha: 1.00)
         
-
     }
 }

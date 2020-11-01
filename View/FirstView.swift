@@ -35,8 +35,8 @@ class FirstView: UIView {
     }()
     
     let baikButton: UIButton = {
-        let button = UIButton(type: UIButton.ButtonType.custom)
-        let image = UIImage(named: "baik")
+        let button = UIButton(type: UIButton.ButtonType.system)
+        let image = UIImage(named: "baik")?.withRenderingMode(.alwaysOriginal)
         button.setImage(image, for: .normal)
         return button
     }()
@@ -75,10 +75,11 @@ class FirstView: UIView {
         return imageView
     }()
     
-    let backImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "backImage")
-        return imageView
+    let backImage: UIView = {
+        let view = UIView()
+        view.layer.cornerRadius = 25
+        view.backgroundColor = .white
+        return view
     }()
 
     override init(frame: CGRect){
@@ -107,7 +108,7 @@ class FirstView: UIView {
         self.backImage.addSubview(burukButton)
         
         self.greatingLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(self.safeAreaLayoutGuide).offset(95)
+            make.top.equalTo(self.safeAreaLayoutGuide).offset(105)
             make.left.equalTo(self.safeAreaLayoutGuide).offset(20)
         }
         
@@ -122,10 +123,10 @@ class FirstView: UIView {
         }
         
         self.backImage.snp.makeConstraints { (make) in
-            make.bottom.equalTo(self.safeAreaLayoutGuide).offset(80)
+            make.top.equalTo(self.safeAreaLayoutGuide).offset(210)
             make.left.equalTo(self.safeAreaLayoutGuide)
             make.right.equalTo(self.safeAreaLayoutGuide)
-            make.top.equalTo(self.safeAreaLayoutGuide).offset(190)
+            make.bottom.equalTo(self.safeAreaLayoutGuide).offset(80)
         }
         
         self.detailLabel.snp.makeConstraints { (make) in
@@ -136,26 +137,36 @@ class FirstView: UIView {
         self.biasaAjaButton.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.backImage)
             make.bottom.equalTo(self.backImage).offset(-180)
+            make.width.equalTo(80)
+            make.height.equalTo(100)
         }
         
         self.baikButton.snp.makeConstraints { (make) in
             make.bottom.equalTo(biasaAjaButton.snp.top).offset(5)
             make.left.equalTo(self.backImage).offset(60)
+            make.width.equalTo(80)
+            make.height.equalTo(100)
         }
         
         self.sangatBaikButton.snp.makeConstraints { (make) in
             make.bottom.equalTo(biasaAjaButton.snp.top).offset(5)
             make.right.equalTo(self.backImage).offset(-60)
+            make.width.equalTo(80)
+            make.height.equalTo(100)
         }
         
         self.sangatBurukButton.snp.makeConstraints { (make) in
             make.bottom.equalTo(baikButton.snp.top).offset(-8)
             make.left.equalTo(self.backImage).offset(98)
+            make.width.equalTo(80)
+            make.height.equalTo(100)
         }
         
         self.burukButton.snp.makeConstraints { (make) in
             make.bottom.equalTo(sangatBaikButton.snp.top).offset(-8)
             make.right.equalTo(self.backImage).offset(-98)
+            make.width.equalTo(80)
+            make.height.equalTo(100)
         }
     }
 }
