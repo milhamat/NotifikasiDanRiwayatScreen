@@ -16,6 +16,8 @@
 		DAC75DEA254C7E0F00AC30D2 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DE9254C7E0F00AC30D2 /* SecondView.swift */; };
 		DAC75DED254C7E2F00AC30D2 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DEC254C7E2F00AC30D2 /* SecondController.swift */; };
 		DAC75DF0254D196B00AC30D2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DEF254D196B00AC30D2 /* TabBarController.swift */; };
+		DAC75E14254EE46F00AC30D2 /* NotifikasiActivateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75E13254EE46F00AC30D2 /* NotifikasiActivateView.swift */; };
+		DAC75E17254EE49300AC30D2 /* NotifikasiActivateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75E16254EE49300AC30D2 /* NotifikasiActivateController.swift */; };
 		ED219333EEA4892A1CA74A3A /* Pods_NotifikasiDanRiwayatScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF71974B6AD0DC1D0BE8086 /* Pods_NotifikasiDanRiwayatScreen.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		DAC75DE9254C7E0F00AC30D2 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		DAC75DEC254C7E2F00AC30D2 /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 		DAC75DEF254D196B00AC30D2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DAC75E13254EE46F00AC30D2 /* NotifikasiActivateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifikasiActivateView.swift; sourceTree = "<group>"; };
+		DAC75E16254EE49300AC30D2 /* NotifikasiActivateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifikasiActivateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				DA370E6025431EBF005E9E1D /* FirstController.swift */,
 				DAC75DEC254C7E2F00AC30D2 /* SecondController.swift */,
 				DAC75DEF254D196B00AC30D2 /* TabBarController.swift */,
+				DAC75E16254EE49300AC30D2 /* NotifikasiActivateController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 			children = (
 				DAC75DDE2548638100AC30D2 /* FirstView.swift */,
 				DAC75DE9254C7E0F00AC30D2 /* SecondView.swift */,
+				DAC75E13254EE46F00AC30D2 /* NotifikasiActivateView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,7 +247,9 @@
 				DAC75DEA254C7E0F00AC30D2 /* SecondView.swift in Sources */,
 				DA370E5D25431EBF005E9E1D /* AppDelegate.swift in Sources */,
 				DAC75DED254C7E2F00AC30D2 /* SecondController.swift in Sources */,
+				DAC75E14254EE46F00AC30D2 /* NotifikasiActivateView.swift in Sources */,
 				DAC75DF0254D196B00AC30D2 /* TabBarController.swift in Sources */,
+				DAC75E17254EE49300AC30D2 /* NotifikasiActivateController.swift in Sources */,
 				DAC75DDF2548638100AC30D2 /* FirstView.swift in Sources */,
 				DA370E5F25431EBF005E9E1D /* SceneDelegate.swift in Sources */,
 			);
