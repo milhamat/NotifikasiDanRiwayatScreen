@@ -20,6 +20,8 @@ class MainController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         
         self.firstView.biasaAjaButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        
+        //        print("screenType:", UIScreen.main.nativeBounds.height)
     }
     
     @objc private func buttonPressed(){
