@@ -12,6 +12,7 @@ class ActivateNotificationView: UIView{
     
     let notifBellImage: UIImageView = {
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(named: "iconNoticationBell")
         return imageView
     }()
@@ -52,6 +53,9 @@ class ActivateNotificationView: UIView{
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
+        print((self.frame.size.width / 4) - 3.5)
+        print(self.frame.size.height)
+        print(UIScreen.main.nativeBounds.height)
     }
     
     required init?(coder: NSCoder) {
@@ -68,32 +72,47 @@ class ActivateNotificationView: UIView{
         self.addSubview(skipButton)
         
         self.notifBellImage.snp.makeConstraints { (make) in
-            make.top.equalTo(self.safeAreaLayoutGuide).offset(200)
+//            make.top.equalTo(self.safeAreaLayoutGuide).offset(70)
+            make.bottom.equalTo(notifLabel.snp.top).offset(-80)
             make.centerX.equalTo(self.safeAreaLayoutGuide)
+            let imageSize = (self.frame.size.width / 4) - 3.5
+            make.size.equalTo(CGSize(width: imageSize, height: imageSize))
         }
         
         self.notifLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(notifBellImage.snp.bottom).offset(80)
+            make.bottom.equalTo(detailLabel.snp.top).offset(-30)
             make.centerX.equalTo(self.safeAreaLayoutGuide)
         }
         
         self.detailLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(notifLabel.snp.bottom).offset(30)
+            make.bottom.equalTo(activateButton.snp.top).offset(-30)
             make.centerX.equalTo(self.safeAreaLayoutGuide)
-            make.height.equalTo(60)
-            make.width.equalTo(360)
+            make.right.equalTo(self.safeAreaLayoutGuide).offset(-20)
+            make.left.equalTo(self.safeAreaLayoutGuide).offset(20)
+            make.height.equalTo(80)
+//            make.width.equalTo(360)
         }
         
         self.activateButton.snp.makeConstraints { (make) in
-            make.top.equalTo(detailLabel.snp.bottom).offset(30)
+            make.bottom.equalTo(skipButton.snp.top).offset(-30)
             make.centerX.equalTo(self.safeAreaLayoutGuide)
+            make.right.equalTo(self.safeAreaLayoutGuide).offset(-40)
+            make.left.equalTo(self.safeAreaLayoutGuide).offset(40)
             make.height.equalTo(55)
-            make.width.equalTo(300)
+//            make.width.equalTo(300)
         }
         
         self.skipButton.snp.makeConstraints { (make) in
-            make.top.equalTo(activateButton.snp.bottom).offset(20)
             make.centerX.equalTo(self.safeAreaLayoutGuide)
+            if UIScreen.main.nativeBounds.height == 1136.0 {
+                make.bottom.equalTo(self.safeAreaLayoutGuide).offset(-50)
+            }
+            if UIScreen.main.nativeBounds.height == 1334.0 {
+                make.bottom.equalTo(self.safeAreaLayoutGuide).offset(-90)
+            }
+            else {
+                make.bottom.equalTo(self.safeAreaLayoutGuide).offset(-150)
+            }
         }
     }
 }
