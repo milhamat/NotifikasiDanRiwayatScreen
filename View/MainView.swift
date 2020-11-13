@@ -81,10 +81,21 @@ class MainView: UIView {
         view.backgroundColor = .white
         return view
     }()
+    
+    
 
     override init(frame: CGRect){
         super.init(frame: frame)
         setupView()
+        
+        if UIScreen.main.nativeBounds.height == 1136.0 {
+            greatingLabel.font = UIFont(name: "Helvetica", size: 24)
+            userNameLabel.font = UIFont(name: "Helvetica", size: 24)
+        }
+        
+        print("Height : ",self.frame.size.height)
+        print("Width : ",self.frame.size.width)
+        print((self.frame.size.height * 0.78) * 0.12)
     }
     
     required init?(coder: NSCoder) {
@@ -94,19 +105,20 @@ class MainView: UIView {
     private func setupView(){
         self.backgroundColor = UIColor(red: 0.94, green: 0.89, blue: 0.87, alpha: 1.00)
         
-        self.addSubview(greatingLabel)
-        self.addSubview(userNameLabel)
+        self.addSubview(self.greatingLabel)
+        self.addSubview(self.userNameLabel)
         
-        self.addSubview(faceImage)
-        self.addSubview(backImage)
+        self.addSubview(self.faceImage)
+        self.addSubview(self.backImage)
         
-        self.backImage.addSubview(detailLabel)
-        self.backImage.addSubview(biasaAjaButton)
-        self.backImage.addSubview(sangatBaikButton)
-        self.backImage.addSubview(baikButton)
-        self.backImage.addSubview(sangatBurukButton)
-        self.backImage.addSubview(burukButton)
+        self.backImage.addSubview(self.detailLabel)
+        self.backImage.addSubview(self.biasaAjaButton)
+        self.backImage.addSubview(self.sangatBaikButton)
+        self.backImage.addSubview(self.baikButton)
+        self.backImage.addSubview(self.sangatBurukButton)
+        self.backImage.addSubview(self.burukButton)
         
+    
         self.greatingLabel.snp.makeConstraints { (make) in
             make.top.equalTo(self.safeAreaLayoutGuide).offset(105)
             make.left.equalTo(self.safeAreaLayoutGuide).offset(20)

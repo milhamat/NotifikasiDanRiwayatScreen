@@ -50,6 +50,12 @@ class ActivateNotificationView: UIView{
         return botton
     }()
     
+//    let tryView: UIView = {
+//        let view = UIView()
+//        view.backgroundColor = .lightGray
+//        return view
+//    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -65,11 +71,18 @@ class ActivateNotificationView: UIView{
     private func setupView(){
         self.backgroundColor = UIColor(red: 0.94, green: 0.89, blue: 0.87, alpha: 1.00)
         
+//        self.addSubview(self.tryView)
         self.addSubview(notifBellImage)
         self.addSubview(notifLabel)
         self.addSubview(detailLabel)
         self.addSubview(activateButton)
         self.addSubview(skipButton)
+        
+//        self.tryView.snp.makeConstraints { (make) in
+//            make.bottom.right.equalTo(self.safeAreaLayoutGuide).offset(20)
+//            make.left.equalTo(self.safeAreaLayoutGuide)
+//            make.height.equalTo(40)
+//        }
         
         self.notifBellImage.snp.makeConstraints { (make) in
 //            make.top.equalTo(self.safeAreaLayoutGuide).offset(70)

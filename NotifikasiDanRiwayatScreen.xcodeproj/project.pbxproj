@@ -12,6 +12,13 @@
 		DA370E6125431EBF005E9E1D /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA370E6025431EBF005E9E1D /* MainController.swift */; };
 		DA370E6625431EC0005E9E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA370E6525431EC0005E9E1D /* Assets.xcassets */; };
 		DA370E6925431EC0005E9E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA370E6725431EC0005E9E1D /* LaunchScreen.storyboard */; };
+		DAAE988A255EC53100DBA3D0 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9889255EC53100DBA3D0 /* ReportView.swift */; };
+		DAAE988D255EC58E00DBA3D0 /* ReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE988C255EC58E00DBA3D0 /* ReportController.swift */; };
+		DAAE9890255EC5BD00DBA3D0 /* WarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE988F255EC5BD00DBA3D0 /* WarningView.swift */; };
+		DAAE9893255EC5CD00DBA3D0 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9892255EC5CD00DBA3D0 /* CategoryView.swift */; };
+		DAAE9896255EC61300DBA3D0 /* WarningController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9895255EC61300DBA3D0 /* WarningController.swift */; };
+		DAAE989A255EC68A00DBA3D0 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9899255EC68A00DBA3D0 /* CategoryCell.swift */; };
+		DAAE989D255EC6BC00DBA3D0 /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE989C255EC6BC00DBA3D0 /* CategoryController.swift */; };
 		DAC75DDF2548638100AC30D2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DDE2548638100AC30D2 /* MainView.swift */; };
 		DAC75DEA254C7E0F00AC30D2 /* NotificationAndRiwayatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DE9254C7E0F00AC30D2 /* NotificationAndRiwayatView.swift */; };
 		DAC75DED254C7E2F00AC30D2 /* NotificationAndRiwayatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC75DEC254C7E2F00AC30D2 /* NotificationAndRiwayatController.swift */; };
@@ -32,6 +39,13 @@
 		DA370E6525431EC0005E9E1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA370E6825431EC0005E9E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA370E6A25431EC0005E9E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAAE9889255EC53100DBA3D0 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		DAAE988C255EC58E00DBA3D0 /* ReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportController.swift; sourceTree = "<group>"; };
+		DAAE988F255EC5BD00DBA3D0 /* WarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningView.swift; sourceTree = "<group>"; };
+		DAAE9892255EC5CD00DBA3D0 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		DAAE9895255EC61300DBA3D0 /* WarningController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningController.swift; sourceTree = "<group>"; };
+		DAAE9899255EC68A00DBA3D0 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		DAAE989C255EC6BC00DBA3D0 /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
 		DAC75DDE2548638100AC30D2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DAC75DE9254C7E0F00AC30D2 /* NotificationAndRiwayatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAndRiwayatView.swift; sourceTree = "<group>"; };
 		DAC75DEC254C7E2F00AC30D2 /* NotificationAndRiwayatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAndRiwayatController.swift; sourceTree = "<group>"; };
@@ -94,6 +108,14 @@
 			path = NotifikasiDanRiwayatScreen;
 			sourceTree = "<group>";
 		};
+		DAAE9898255EC64600DBA3D0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DAAE9899255EC68A00DBA3D0 /* CategoryCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		DAC75DDB2548634600AC30D2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +123,9 @@
 				DAC75DEC254C7E2F00AC30D2 /* NotificationAndRiwayatController.swift */,
 				DAC75DEF254D196B00AC30D2 /* TabBarController.swift */,
 				DAC75E16254EE49300AC30D2 /* ActivateNotificationController.swift */,
+				DAAE988C255EC58E00DBA3D0 /* ReportController.swift */,
+				DAAE9895255EC61300DBA3D0 /* WarningController.swift */,
+				DAAE989C255EC6BC00DBA3D0 /* CategoryController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -108,9 +133,13 @@
 		DAC75DDC2548635600AC30D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DAAE9898255EC64600DBA3D0 /* Cell */,
 				DAC75DDE2548638100AC30D2 /* MainView.swift */,
 				DAC75DE9254C7E0F00AC30D2 /* NotificationAndRiwayatView.swift */,
 				DAC75E13254EE46F00AC30D2 /* ActivateNotificationView.swift */,
+				DAAE9889255EC53100DBA3D0 /* ReportView.swift */,
+				DAAE988F255EC5BD00DBA3D0 /* WarningView.swift */,
+				DAAE9892255EC5CD00DBA3D0 /* CategoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,7 +188,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					DA370E5825431EBF005E9E1D = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -246,12 +275,19 @@
 				DA370E6125431EBF005E9E1D /* MainController.swift in Sources */,
 				DAC75DEA254C7E0F00AC30D2 /* NotificationAndRiwayatView.swift in Sources */,
 				DA370E5D25431EBF005E9E1D /* AppDelegate.swift in Sources */,
+				DAAE988D255EC58E00DBA3D0 /* ReportController.swift in Sources */,
 				DAC75DED254C7E2F00AC30D2 /* NotificationAndRiwayatController.swift in Sources */,
+				DAAE989D255EC6BC00DBA3D0 /* CategoryController.swift in Sources */,
+				DAAE9893255EC5CD00DBA3D0 /* CategoryView.swift in Sources */,
+				DAAE9890255EC5BD00DBA3D0 /* WarningView.swift in Sources */,
 				DAC75E14254EE46F00AC30D2 /* ActivateNotificationView.swift in Sources */,
 				DAC75DF0254D196B00AC30D2 /* TabBarController.swift in Sources */,
 				DAC75E17254EE49300AC30D2 /* ActivateNotificationController.swift in Sources */,
+				DAAE9896255EC61300DBA3D0 /* WarningController.swift in Sources */,
 				DAC75DDF2548638100AC30D2 /* MainView.swift in Sources */,
+				DAAE988A255EC53100DBA3D0 /* ReportView.swift in Sources */,
 				DA370E5F25431EBF005E9E1D /* SceneDelegate.swift in Sources */,
+				DAAE989A255EC68A00DBA3D0 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A4J3R44FB;
 				INFOPLIST_FILE = NotifikasiDanRiwayatScreen/Info.plist;
@@ -411,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A4J3R44FB;
 				INFOPLIST_FILE = NotifikasiDanRiwayatScreen/Info.plist;
