@@ -5,15 +5,13 @@
 //  Created by Muhammad Ilham Ashiddiq Tresnawan on 13/11/20.
 //
 
-import Cocoa
-
 import UIKit
 
 class CategoryController: UIViewController {
     
     private var categoryView: CategoryView!
     
-    let imageList = ["cs_percayaDiri","cs_bahagia","cs_damai","cs_termotivasi","cs_takut","cs_sedih","cs_kecewa","cs_selfHarm","cs_konflik","cs_bersalah","cs_hampa","cs_kesepian"]
+    let imageList = ["Optimis & PD","Bahagia","Damai","Termotivasi","Cemas & Takut","Sedih","Kecewa","Self Harm","Ada Konflik Nih","Bersalah","Hampa","Kesepian"]
 
     var shouldGoToReadStoryScreen = false
 
@@ -23,10 +21,10 @@ class CategoryController: UIViewController {
         self.categoryView = CategoryView.init(frame: self.view.frame)
         self.view = self.categoryView
         
-        if shouldGoToReadStoryScreen {
-            let controller = ReadStoryController()
-            self.navigationController?.pushViewController(controller, animated: false)
-        }
+//        if shouldGoToReadStoryScreen {
+//            let controller = ReadStoryController()
+//            self.navigationController?.pushViewController(controller, animated: false)
+//        }
         
         categoryView.collectionView.delegate = self
         categoryView.collectionView.dataSource = self
@@ -53,6 +51,7 @@ extension CategoryController: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! CategoryViewCell
         let category = imageList[indexPath.row]
         cell.collectionImage.image = UIImage(named: category)
+        cell.collectionLabel.text = category
         return cell
     }
     
@@ -64,8 +63,7 @@ extension CategoryController: UICollectionViewDelegate, UICollectionViewDataSour
         return CGSize(width: screenWidth, height: screenHeight)
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let controller = ReadStoryController()
-        self.navigationController?.pushViewController(controller, animated: true)
-    }
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        self.navigationController?.pushViewController(controller, animated: true)
+//    }
 }
