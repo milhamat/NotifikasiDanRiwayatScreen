@@ -12,6 +12,8 @@
 		DA370E6125431EBF005E9E1D /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA370E6025431EBF005E9E1D /* MainController.swift */; };
 		DA370E6625431EC0005E9E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA370E6525431EC0005E9E1D /* Assets.xcassets */; };
 		DA370E6925431EC0005E9E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA370E6725431EC0005E9E1D /* LaunchScreen.storyboard */; };
+		DA8144892571309600E29089 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8144882571309600E29089 /* OnboardingView.swift */; };
+		DA81448C257130B100E29089 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA81448B257130B100E29089 /* OnboardingController.swift */; };
 		DAAE988A255EC53100DBA3D0 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE9889255EC53100DBA3D0 /* ReportView.swift */; };
 		DAAE988D255EC58E00DBA3D0 /* ReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE988C255EC58E00DBA3D0 /* ReportController.swift */; };
 		DAAE9890255EC5BD00DBA3D0 /* WarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE988F255EC5BD00DBA3D0 /* WarningView.swift */; };
@@ -39,6 +41,8 @@
 		DA370E6525431EC0005E9E1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA370E6825431EC0005E9E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA370E6A25431EC0005E9E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8144882571309600E29089 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		DA81448B257130B100E29089 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		DAAE9889255EC53100DBA3D0 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		DAAE988C255EC58E00DBA3D0 /* ReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportController.swift; sourceTree = "<group>"; };
 		DAAE988F255EC5BD00DBA3D0 /* WarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningView.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				DAAE988C255EC58E00DBA3D0 /* ReportController.swift */,
 				DAAE9895255EC61300DBA3D0 /* WarningController.swift */,
 				DAAE989C255EC6BC00DBA3D0 /* CategoryController.swift */,
+				DA81448B257130B100E29089 /* OnboardingController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				DAAE9889255EC53100DBA3D0 /* ReportView.swift */,
 				DAAE988F255EC5BD00DBA3D0 /* WarningView.swift */,
 				DAAE9892255EC5CD00DBA3D0 /* CategoryView.swift */,
+				DA8144882571309600E29089 /* OnboardingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 				DAAE989D255EC6BC00DBA3D0 /* CategoryController.swift in Sources */,
 				DAAE9893255EC5CD00DBA3D0 /* CategoryView.swift in Sources */,
 				DAAE9890255EC5BD00DBA3D0 /* WarningView.swift in Sources */,
+				DA81448C257130B100E29089 /* OnboardingController.swift in Sources */,
 				DAC75E14254EE46F00AC30D2 /* ActivateNotificationView.swift in Sources */,
 				DAC75DF0254D196B00AC30D2 /* TabBarController.swift in Sources */,
 				DAC75E17254EE49300AC30D2 /* ActivateNotificationController.swift in Sources */,
@@ -287,6 +294,7 @@
 				DAC75DDF2548638100AC30D2 /* MainView.swift in Sources */,
 				DAAE988A255EC53100DBA3D0 /* ReportView.swift in Sources */,
 				DA370E5F25431EBF005E9E1D /* SceneDelegate.swift in Sources */,
+				DA8144892571309600E29089 /* OnboardingView.swift in Sources */,
 				DAAE989A255EC68A00DBA3D0 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
